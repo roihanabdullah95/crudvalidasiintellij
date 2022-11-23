@@ -30,7 +30,6 @@ public class UserController {
 
     @PostMapping
     public Object addUser(@RequestBody User user) {
-//        if (user.getEmail()==)
         return ResponUserHelper.ok(userService.addUser(user));
     }
 
