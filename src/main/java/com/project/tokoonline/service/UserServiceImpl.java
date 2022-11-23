@@ -1,7 +1,6 @@
 package com.project.tokoonline.service;
 
 
-import com.project.tokoonline.contoller.UserController;
 import com.project.tokoonline.exception.InternalErrorException;
 import com.project.tokoonline.exception.NotFoundException;
 import com.project.tokoonline.model.User;

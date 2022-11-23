@@ -4,7 +4,6 @@ package com.project.tokoonline.service;
 import com.project.tokoonline.exception.InternalErrorException;
 import com.project.tokoonline.exception.NotFoundException;
 import com.project.tokoonline.model.Barang;
-import com.project.tokoonline.model.User;
 import com.project.tokoonline.repository.BarangRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
