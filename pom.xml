@@ -48,6 +48,13 @@
 			<version>3.0.0</version>
 		</dependency>
 <!--		End Swagger doc-->
+<!--		Mapper untuk Data Tranfer Object-->
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+<!--		End Mapper untuk Data Tranfer Object-->
 	</dependencies>
 
 	<build>

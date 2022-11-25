@@ -8,4 +8,5 @@ public interface TugasService {
     Object getTugas(Long id);
     Object editTugas(Long id, String namaBarang, Float price, String email);
     void deleteBarangById(Long id);
+
 }

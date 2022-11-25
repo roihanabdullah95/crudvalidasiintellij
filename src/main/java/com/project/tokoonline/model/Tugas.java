@@ -13,15 +13,15 @@ public class Tugas extends Auditable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "namaBarang")
-    private String namaBarang = "No Name";
+    @Column(name = "namaBarang", nullable = false)
+    private String namaBarang;
 
 
-    @Column(name = "harga")
+    @Column(name = "harga", nullable = false)
     private float price;
 
-    @Column(name = "pemilik")
-    private String email = "Example@gmail.com";
+    @Column(name = "pemilik", nullable = false)
+    private String email ;
 
     @Override
     public String toString() {
