@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table( name = "barang")
+// File ini untuk menambah Gambar pada table, baik post, get atau put
 public class Barang extends Auditable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

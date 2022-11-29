@@ -1,11 +1,11 @@
 package com.project.tokoonline.response;
 
-public class CommonUserResponse <T> {
+public class CommonResponse<T> {
     private String message;
     private String status;
     private T data;
 
-public CommonUserResponse(){
+public CommonResponse(){
 }
 
     public String getMessage() {

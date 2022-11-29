@@ -2,7 +2,7 @@ package com.project.tokoonline.contoller;
 
 import com.project.tokoonline.dto.TugasDTO;
 import com.project.tokoonline.model.Tugas;
-import com.project.tokoonline.response.ResponUserHelper;
+import com.project.tokoonline.response.ResponHelper;
 import com.project.tokoonline.service.TugasService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,22 +19,22 @@ public class TugasController {
 
     @GetMapping("")
     public Object getAllTugas(){
-        return ResponUserHelper.ok(tugasService.getAllTugas());
+        return ResponHelper.ok(tugasService.getAllTugas());
     }
 
     @GetMapping("/{id}")
     public Object getTugas(@PathVariable("id") Long id){
-        return ResponUserHelper.ok(tugasService.getTugas(id));
+        return ResponHelper.ok(tugasService.getTugas(id));
     }
 
     @PostMapping
     public Object addTugas(@RequestBody TugasDTO tugasDTO){
-        return ResponUserHelper.ok(tugasService.addTugas(modelMapper.map(tugasDTO, Tugas.class)));
+        return ResponHelper.ok(tugasService.addTugas(modelMapper.map(tugasDTO, Tugas.class)));
     }
 
     @PutMapping("/{id}")
     public Object editUserById(@PathVariable("id") Long id, @RequestBody Tugas tugas){
-        return ResponUserHelper.ok(tugasService.editTugas(id, tugas.getNamaBarang(), tugas.getPrice(), tugas.getEmail()));
+        return ResponHelper.ok(tugasService.editTugas(id, tugas.getNamaBarang(), tugas.getPrice(), tugas.getEmail()));
     }
 
     @DeleteMapping("/{id}")
